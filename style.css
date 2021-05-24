@@ -1,26 +1,132 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-    font-family: Gotham Rounded;
-}
-
-:root {
-    --hue-neutral:200;
-    --hue-wrong: 0;
-    --hue-correct: 145;
-}
-
 body {
-    --hue: var(--hue-neutral);
-    padding: 0;
-    margin: 0;
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background-color: hsl(car(--hue), 100%, 20%);
-}
-
-body.correct {
-    --hue: var(--hue-correct);
-}
+    
+    background-image: url('./images/low_contrast_linen.png');
+  
+   
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+  
+    
+    padding-top: 90px;
+  }
+  
+  button {
+    margin: 1em;
+  }
+  
+  .navbar {
+    background-color: #3794b3;  
+    color: #b6d7e2;  
+    
+    padding-bottom: 0;
+  
+    
+    padding-left: 0;
+  
+    
+    border-bottom: solid;
+    border-bottom-color: #ccc;
+    width: 100%;
+  }
+  
+  #navbar-title {
+    padding: 15px;
+    font-size: 30px;
+    color: #fff !important; 
+  }
+  
+  
+  .container-fluid {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+   
+  }
+  
+  
+  .nav-link:hover {
+   
+    background-color: #b6d7e2;  
+    
+    color: #666;
+  }
+  
+  
+  #details {
+    
+    background-color: #b6d7e2;  
+    
+    margin-top: 20px;
+    margin-bottom: 80px;
+  
+    
+    padding: 40px;
+  } 
+   
+  
+  li {
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: #897d9a;
+    color: #fff;
+    font-size: 1.5em;
+    line-height: 1.5;
+    list-style-type: none;
+  }
+  
+  li:hover {
+    background-color: #9e9268;
+  }
+  
+  #answer-image {
+    float: left;
+    padding-right: 1em;
+    padding-top: 0.25em;
+  }
+  
+  
+  .footer {
+    
+    background-color: #666;
+    
+    
+    height: 10%;
+    
+   
+    border-top: solid;
+    border-top-color: #b6d7e2;  
+    border-top-width: 8px;
+  }
+  
+  .footer-text {
+    
+    width: 100%;
+    text-align: center;
+  
+    font-size: 10px;
+    color:#fff; 
+  }
+  
+  
+  @media (max-width: 768px) {
+    .container-fluid {
+      
+      padding-left: 0;
+      padding-right: 0;
+    }
+  
+  
+    li {
+      border-right: none;
+    }
+  
+  
+    .nav-link{
+      padding: 1px;
+    }
+  }
