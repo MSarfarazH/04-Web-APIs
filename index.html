@@ -1,48 +1,62 @@
 <!DOCTYPE html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    
-    <title>JavaScript Quiz</title>
-  </head>
-  <body>
-   
-    <nav class="navbar navbar-expand-md fixed-top">
-      <div class="container-fluid">
-            <div id="highscore" class="nav-item nav-link"> View High Scores</div>
-            <h1 id="navbar-title">Javascript Quiz</h1>
-            <table id=timers style="visibility: hidden;">
-              <tr>
-                <td> Time left in Game: </td>
-                <td> <span id="gameTimer" class="nav-item"></span> </td>
-              </tr>
-               <tr>
-                <td>Time left for Question:</td>
-                <td> <span id="quesTimer" class="nav-item"></span> </td>
-              </tr>
-            </table>
-        </div>
-      </div>
-    </nav>
-    
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <title>JavaScript Quiz</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md fixed-top">
     <div class="container-fluid">
-      
-      <section id="details"> </section>
-    </div>    
+      <div id="highscore" class="nav-item nav-link"> View High Scores</div>
+      <h1 id="navbar-title">Javascript Quiz</h1>
+      <table id=timers style="visibility: hidden;">
+        <tr>
+          <td> Time left in Game: </td>
+          <td> <span id="gameTimer" class="nav-item"></span> </td>
+        </tr>
+        <tr>
+          <td>Time left for Question:</td>
+          <td> <span id="quesTimer" class="nav-item"></span> </td>
+        </tr>
+      </table>
+    </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+
+    <h3 id="score">Score:</h3>
+
+    <button id="initBtn" type="button">Start</button>
+
+    <section id="details">
+      <div id="question"></div>
+      <div class="buttons">
+        <button id="btn0"><span id="choice0"></span></button>
+        <button id="btn1"><span id="choice1"></span></button>
+        <button id="btn2"><span id="choice2"></span></button>
+        <button id="btn3"><span id="choice3"></span></button>
+      </div>
+    </section>
   
+  </div>
 
- 
-    <nav class="navbar fixed-bottom footer">
-        <div class="footer-text"> Footer </div>
-    </nav>
+  <nav class="navbar fixed-bottom footer">
+    <div class="footer-text"> Footer </div>
+  </nav>
 
-    
-    
-   
-    <script src='./script.js'></script>
-  </body>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src='./script.js'></script>
+</body>
+
 </html>

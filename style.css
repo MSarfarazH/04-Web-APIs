@@ -1,7 +1,7 @@
 body {
     
     background-image: url('./images/low_contrast_linen.png');
-  
+    background-color: black;
    
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
@@ -10,9 +10,37 @@ body {
     padding-top: 90px;
   }
   
-  button {
-    margin: 1em;
-  }
+  .buttons {
+    margin-top: 30px;
+}
+
+#score {
+  color: white
+}
+ 
+#btn0, #btn1, #btn2, #btn3 {
+    background-color: #00acca;
+    width: 250px;
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid #1D3C6A;
+    margin: 10px 40px 10px 0px;
+    padding: 10px 10px;
+}
+ 
+#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
+    cursor: pointer;
+    background-color: #01BBFF;
+}
+ 
+#btn0:focus, #btn1:focus, #btn2:focus, #btn3:focus {
+    outline: 0;
+}
+ 
+#progress {
+    color: #2b2b2b;
+    font-size: 18px;
+}
   
   .navbar {
     background-color: #3794b3;  
